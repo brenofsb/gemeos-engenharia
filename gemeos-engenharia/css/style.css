@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #475569;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    border-bottom: 2px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+h1, h2 {
+    color: #0f172a;
+    margin-top: 0;
+}
+
+a {
+    color: #d97706;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}   
+
+footer {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.hero {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    color: #cbd5e1;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.btn-dourado {
+  background-color: #d97706; 
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.2s ease; 
+}
+
+.btn-dourado:hover {
+  background-color: #b45309; 
+  text-decoration: none;
+}
+
+.btn-transparente {
+    background-color: transparent;  
+    border: 2px solid #d97706;
+    color: #ffffff;
+    padding: 10px 26px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: all 0.2s ease;
+}
+
+.btn-transparente:hover {
+    background-color: #d97706; 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.secao-sobre {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.secao-servicos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.servico-grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card-servico {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  border-top: 4px solid #d97706; /* Detalhe em Dourado no topo do cartão */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px); /* Eleva o cartão 5px para cima */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Intensifica a sombra */
+}
+
+.card-servico h3 {
+  color: #0f172a; 
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.card-servico p {
+  font-size: 15px;
+  line-height: 1.5; /* Melhora o espaçamento entre as linhas do texto */
+  margin-bottom: 20px;
+}
+
+.link-detalhe {
+  color: #d97706;
+  font-size: 14px;
+}
+
+/* Seção Contato */
+.secao-contato {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+}
+
+.subtitulo-contato {
+  text-align: center;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.contato-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.contato-info h3 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.info-item {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* Botão de WhatsApp em Verde */
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebc57;
+  text-decoration: none;
+}
+
+/* Formulário de Contato */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.campo input,
+.campo textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+/* Destaque visual quando o usuário clica para digitar no campo */
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #d97706; /* Muda a borda para a cor dourada da marca */
+}
+
+.btn-enviar {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  
+  /* 1. Reorganiza o Cabeçalho para Celular */
+  header {
+    flex-direction: column; /* Empilha a logo e o menu em formato de coluna */
+    gap: 15px;              /* Dá 15px de distância vertical entre a logo e os links */
+    padding: 15px 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;        /* Permite que os links dobrem de linha se a tela for muito estreita */
+    justify-content: center;/* Centraliza os links do menu */
+    gap: 12px;
+  }
+
+  /* 2. Ajusta o Hero para Celular */
+  .hero {
+    padding: 40px 15px;     /* Reduz o espaçamento interno superior e inferior */
+  }
+
+  .hero h2 {
+    font-size: 24px;        /* Diminui a fonte do título para caber confortavelmente */
+  }
+
+  .hero p {
+    font-size: 16px;        /* Ajusta o parágrafo */
+  }
+
+  /* 3. Adapta os Botões para ficarem fáceis de tocar com o polegar */
+  .btn-dourado, 
+  .btn-transparente {
+    display: block;         /* Ocupa a linha inteira */
+    width: 100%;            /* O botão se estica em 100% da largura útil */
+    margin: 10px 0 0 0;     /* Remove a margem lateral anterior e usa margem superior */
+    box-sizing: border-box; /* Garante que o padding não faça o botão sair da tela */
+  }
+}
+
