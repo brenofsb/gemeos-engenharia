@@ -1,39 +1,47 @@
-# Gemeos Engenharia
+# GEMEOS ENGENHARIA
 
-Site institucional responsivo para apresentar os serviços da Gemeos Engenharia e
-facilitar o contato de novos clientes.
+Site institucional responsivo da GEMEOS ENGENHARIA, criado para apresentar a
+empresa, divulgar seus serviços e facilitar o contato de novos clientes.
 
-## Como visualizar
+## Acessar o site
 
-Abra `index.html` diretamente no navegador ou publique os arquivos em um serviço
-de hospedagem estática. Não há dependências ou etapa de compilação.
+O site está publicado no GitHub Pages:
 
-## Estrutura
+https://brenofsb.github.io/gemeos-engenharia/
 
-- `index.html`: conteúdo semântico, navegação, serviços e formulário de contato.
-- `css/style.css`: identidade visual, componentes e adaptações para desktop,
-  tablet e celular.
-- `js/script.js`: menu mobile acessível e validação do formulário, que prepara a
-  mensagem para envio pelo WhatsApp.
-- `imagens/obra.svg`: ilustração vetorial responsiva usada no hero.
+Também é possível abrir `index.html` diretamente em um navegador. O projeto não
+precisa de instalação de dependências nem de uma etapa de compilação.
 
-## Decisões de interface
+## Arquivos do projeto
 
-A paleta combina azul-escuro, neutros claros e dourado para destacar ações. A
-tipografia sem serifa prioriza leitura em telas pequenas. O conteúdo é dividido
-em seções curtas e cards de serviços; o CSS Grid organiza os cards e o contato,
-com uma coluna em telas estreitas. O menu hambúrguer oferece controles de teclado
-e estado acessível, e o formulário informa erros junto aos campos.
+- `index.html`: estrutura da página, navegação, serviços e formulário de contato.
+- `css/style.css`: identidade visual, layout, efeitos e estilos responsivos.
+- `js/script.js`: menu hambúrguer, validação do formulário e preparação da
+  mensagem para o WhatsApp.
+- `imagens/obra.svg`: ilustração usada no banner principal.
+- `imagens/logotipo.png`: símbolo da empresa exibido no cabeçalho, com fundo
+  transparente.
+- `imagens/icon-gemeos.ico`: favicon atual da página.
+- `imagens/icon.ico`: favicon anterior, mantido no projeto.
 
-Para a demonstração, confira a página em uma largura desktop (por exemplo,
-1440 px), tablet (768 px) e celular (375 px).
+## Recursos implementados
 
-## Redundâncias removidas
+- Cabeçalho fixo com navegação por links para as seções da página.
+- Menu hambúrguer em telas estreitas.
+- Banner principal com ilustração responsiva.
+- Seções sobre a empresa, serviços e contato.
+- Cards de serviços organizados com CSS Grid.
+- Formulário com validação em JavaScript para nome, e-mail e mensagem. Após a
+  validação, os dados são formatados em um link para iniciar uma conversa pelo
+  WhatsApp; o formulário não envia dados para um servidor.
+- Efeitos de hover e transições em botões e cards.
+- Layout adaptado para diferentes larguras de tela por meio de media queries.
 
-- Os três cards que repetiam o mesmo título e texto genérico foram substituídos
-  por descrições distintas de serviços.
-- O formulário usa uma validação JavaScript única com mensagens junto aos campos,
-  em vez de combinar alertas, verificações duplicadas de campos vazios e
-  validação de e-mail repetida.
-- O envio usa o link `wa.me`, que direciona ao WhatsApp adequado no dispositivo,
-  sem detectar o navegador ou escolher entre duas URLs.
+## Visualizar em diferentes tamanhos
+
+Para conferir a responsividade, abra as ferramentas de desenvolvedor do
+navegador e teste, por exemplo, estas larguras:
+
+- Desktop: 1440 px
+- Tablet: 768 px
+- Celular: 375 px
