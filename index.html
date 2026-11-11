@@ -5,130 +5,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GEMEOS ENGENHARIA</title>
-  <link rel="icon" href="imagens/icon.ico"/>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="imagens/icon-gemeos.ico" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body id="topo">
-  <header>
-    <a class="marca" href="#topo">
-    <img src="imagens/logotipos.png" alt="Logo da Gemeos Engenharia">
-    <h1>GEMEOS ENGENHARIA</h1>
-  </a>
-  
-    <nav>
+  <header class="cabecalho">
+    <a class="marca" href="#topo" aria-label="GEMEOS ENGENHARIA, página inicial">
+      <img src="imagens/logotipo.png" alt="Ícone da GEMEOS ENGENHARIA" />
+      <span class="marca-texto">
+        <span class="marca-nome">GEMEOS</span>
+        <span class="marca-descricao">ENGENHARIA</span>
+      </span>
+    </a>
+
+    <button id="btn-menu" class="btn-menu" type="button" aria-label="Abrir menu" aria-controls="navegacao"
+      aria-expanded="false">
+      <span id="hamburguer" aria-hidden="true"></span>
+    </button>
+
+    <nav id="navegacao" class="navegacao" aria-label="Navegação principal">
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Engenharia de Alto Padrão e Construção Civil</h2>
-    <p>
-      Projetos e execuções com precisão, qualidade e compromisso com o seu
-      projeto.
-    </p>
-    <a href="#contato" class="btn-dourado">Solicitar Orçamento</a>
-    <a href="#servicos" class="btn-transparente">Nossos Serviços</a>
-  </section>
-
-  <main>
-    <section id="sobre" class="secao-sobre">
-      <h2>Sobre Nós</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia vitae unde reprehenderit at sunt, nobis fugit
-        distinctio dolores, doloribus aut aliquid explicabo atque, beatae consequatur sed veritatis facere consequuntur
-        nesciunt!
-      </p>
-    </section>
-
-    <section id="servicos" class="secao-servicos">
-      <h2>Nossos Serviços</h2>
-
-      <div class="servico-grade">
-        <article class="card-servico">
-          <h3>Construção Civil</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia vitae unde reprehenderit at sunt, nobis
-            fugit distinctio dolores, doloribus aut aliquid explicabo atque, beatae consequatur sed veritatis facere
-            consequuntur nesciunt!
-          </p>
-          <a href="#contato" class="link-detalhe">Saiba mais &rarr;</a>
-        </article>
-
-        <article class="card-servico">
-          <h3>Construção Civil</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia vitae unde reprehenderit at sunt, nobis
-            fugit distinctio dolores, doloribus aut aliquid explicabo atque, beatae consequatur sed veritatis facere
-            consequuntur nesciunt!
-          </p>
-          <a href="#contato" class="link-detalhe">Saiba mais &rarr;</a>
-        </article>
-
-        <article class="card-servico">
-          <h3>Construção Civil</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia vitae unde reprehenderit at sunt, nobis
-            fugit distinctio dolores, doloribus aut aliquid explicabo atque, beatae consequatur sed veritatis facere
-            consequuntur nesciunt!
-          </p>
-          <a href="#contato" class="link-detalhe">Saiba mais &rarr;</a>
-        </article>
-
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="titulo-hero">
+      <img class="hero-imagem" src="imagens/obra.svg" alt="Ilustração de uma obra com edifício e guindaste"/>
+      <div class="hero-conteudo">
+        <p class="sobretitulo">Planejamento que constrói confiança</p>
+        <h1 id="titulo-hero">Engenharia para tirar seus projetos do papel</h1>
+        <p class="hero-descricao">
+          Soluções em construção e engenharia com atenção a cada etapa do seu projeto.
+        </p>
+        <div class="hero-acoes">
+          <a href="#contato" class="btn btn-dourado">Solicitar orçamento</a>
+          <a href="#servicos" class="btn btn-contorno">Conheça os serviços</a>
+        </div>
       </div>
     </section>
 
-    <section id="contato" class="secao-contato">
-      <h2>Entre em contato</h2>
-      <p class="subtitulo-contato">Solicite um orçamento ou tire dúvidas conosco!</p>
+    <section id="sobre" class="secao secao-sobre" aria-labelledby="titulo-sobre">
+      <p class="sobretitulo">Quem somos</p>
+      <h2 id="titulo-sobre">Engenharia com compromisso em cada detalhe</h2>
+      <p class="texto-sobre">
+        A GEMEOS ENGENHARIA atua com projetos e serviços de construção civil,
+        acompanhando as necessidades de cada cliente do planejamento à execução.
+        Nosso objetivo é oferecer comunicação clara, organização e cuidado em
+        cada etapa do trabalho.
+      </p>
+    </section>
+
+    <section id="servicos" class="secao secao-servicos" aria-labelledby="titulo-servicos">
+      <div class="secao-cabecalho">
+        <p class="sobretitulo">Como podemos ajudar</p>
+        <h2 id="titulo-servicos">Nossos serviços</h2>
+        <p class="descricao-secao">Conheça algumas das frentes de trabalho da GEMEOS ENGENHARIA.</p>
+      </div>
+
+      <div class="servico-grade">
+        <article class="card-servico">
+          <span class="card-numero" aria-hidden="true">01</span>
+          <h3>Construção e reformas</h3>
+          <p>Execução e renovação de espaços, com planejamento adequado às necessidades da obra.</p>
+          <a href="#contato" class="link-detalhe">Converse com a equipe <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="card-servico">
+          <span class="card-numero" aria-hidden="true">02</span>
+          <h3>Projetos de engenharia</h3>
+          <p>Desenvolvimento e organização de projetos para orientar cada etapa da construção.</p>
+          <a href="#contato" class="link-detalhe">Converse com a equipe <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="card-servico">
+          <span class="card-numero" aria-hidden="true">03</span>
+          <h3>Acompanhamento técnico</h3>
+          <p>Suporte e acompanhamento para ajudar a manter o trabalho alinhado ao projeto.</p>
+          <a href="#contato" class="link-detalhe">Converse com a equipe <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="secao secao-contato" aria-labelledby="titulo-contato">
+      <div class="secao-cabecalho">
+        <p class="sobretitulo">Vamos conversar</p>
+        <h2 id="titulo-contato">Conte um pouco sobre seu projeto</h2>
+        <p class="descricao-secao">Preencha o formulário para iniciar uma conversa pelo WhatsApp.</p>
+      </div>
 
       <div class="contato-container">
+        <aside class="contato-info" aria-labelledby="titulo-atendimento">
+          <h3 id="titulo-atendimento">Canais de atendimento</h3>
+          <p>Estamos à disposição para ouvir sua necessidade e orientar os próximos passos.</p>
 
-        <div class="contato-info">
-          <h3>Canais de atendimento</h3>
-          <p>Estamos prontos para atender seu projeto com agilidade e compromisso.</p>
+          <dl class="contato-lista">
+            <div class="info-item">
+              <dt>Telefone / WhatsApp</dt>
+              <dd><a href="https://wa.me/5571982555768" target="_blank" rel="noopener noreferrer">(71) 98255-5768</a></dd>
+            </div>
+            <div class="info-item">
+              <dt>E-mail</dt>
+              <dd><a href="mailto:borgesbreno.0905@gmail.com">borgesbreno.0905@gmail.com</a></dd>
+            </div>
+            <div class="info-item">
+              <dt>Horário</dt>
+              <dd>Segunda a sexta, das 8h às 18h</dd>
+            </div>
+          </dl>
+          <a href="https://wa.me/5571982555768" target="_blank" rel="noopener noreferrer"
+            class="btn btn-whatsapp">Falar pelo WhatsApp</a>
+        </aside>
 
-          <div class="info-item">
-            <strong>WhatsApp:</strong> (71) 98255-5768
-          </div>
-          <div class="info-item">
-            <strong>Email:</strong> contato@gemeosengenharia.com.br
-          </div>
-          <div class="info-item">
-            <strong>Horário:</strong> Seg. a Sex. 8h às 18h
-          </div>
-
-          <a href="https://wa.me/5571982555768" target="_blank" class="btn-whatsapp">Atendimento via WhatsApp</a>
-        </div>
-
-        <form class="form-contato">
+        <form class="form-contato" novalidate>
           <div class="campo">
             <label for="nome">Seu nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="name" required
+              aria-describedby="erro-nome" />
+            <span class="campo-erro" id="erro-nome"></span>
           </div>
           <div class="campo">
-            <label for="email">Seu E-mail</label>
-            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+            <label for="email">Seu e-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" autocomplete="email" required
+              aria-describedby="erro-email" />
+            <span class="campo-erro" id="erro-email"></span>
           </div>
           <div class="campo">
-            <label for="mensagem">Mensagem / Detalhes da Obra</label>
-            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente o serviço necessário..."
-              required></textarea>
+            <label for="mensagem">Mensagem / detalhes da obra</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente o serviço necessário"
+              required aria-describedby="erro-mensagem"></textarea>
+            <span class="campo-erro" id="erro-mensagem"></span>
           </div>
 
-          <button type="submit" class="btn-dourado btn-enviar">Enviar Mensagem</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <button type="submit" class="btn btn-dourado btn-enviar">Continuar pelo WhatsApp</button>
         </form>
-
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="rodape">
     <p>© 2026 GEMEOS ENGENHARIA. Todos os direitos reservados.</p>
   </footer>
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
